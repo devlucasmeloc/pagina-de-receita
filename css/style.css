@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-rosa-claro: #F3E5D8;
+    --color-branco: #FFFFFF;
+    --color-marrom: #834A35;
+    --color-preto: #32312F;
+    --color-roxo: #633349
+}
