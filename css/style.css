@@ -5,9 +5,172 @@
 }
 
 :root {
-    --color-rosa-claro: #F3E5D8;
+    --color-rosa-claro: #f3e9e0;
     --color-branco: #FFFFFF;
     --color-marrom: #834A35;
     --color-preto: #32312F;
-    --color-roxo: #633349
+    --color-roxo: #633349;
 }
+
+body {
+    background-color: var(--color-rosa-claro);
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: var(--color-preto);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 700px;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: var(--color-branco);
+}
+
+.foto-hamburguer {
+    background-image: url("../img/hamburguer.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* TITULO, DESCRIÇÃO, E TEMPO DE PREPARO */
+
+.titulo-principal, .titulo-secundario {
+    font-family: "Fraunces", serif;
+}
+
+.titulo-principal {
+    color: var(--color-preto);
+    margin-bottom: 30px;
+    font-size: 2rem;
+    line-height: 2.25rem;;
+}
+
+.descricao {
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.tempo-preparo {
+    background-color: var(--color-rosa-claro);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.tempo-preparo h3 {
+    margin-bottom: 15px;
+    color: var(--color-roxo);
+}
+
+.tempo-preparo ul {
+    margin-left: 15px;
+}
+
+.tempo-preparo ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* TITULO SECUNDÁRIO E INGREDIENTES */
+
+.titulo-secundario {
+    color: var(--color-marrom);
+    margin-bottom: 30px;
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.lista-ingredientes {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.lista-ingredientes li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+hr {
+    margin-bottom: 30px;
+    border-color: var(--color-rosa-claro);
+}
+
+/* INSTRUÇÕES */
+
+.lista-instrucoes {
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.lista-instrucoes li {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.lista-instrucoes li::marker{
+    font-weight: bold;
+    color: var(--color-marrom);
+}
+
+/* NUTRIÇÃO */
+
+.descricao-nutricao {
+    margin-bottom: 30px;
+}
+
+.container-nutricao {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.nutricao-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.linha-nutricao {
+    margin-bottom: 20px;
+}
+
+.nutricao-item p {
+    text-align: left;
+}
+
+.caloria-bold {
+    font-weight: bold;
+    color: var(--color-marrom);
+}
+
+@media (max-width: 700px) {
+    body {
+        margin-top: 0px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo-principal {
+        font-size: 1.5rem;
+    }
+
+    .titulo-secundario {
+        font-size: 1.25rem;
+    }
+}
+
+
